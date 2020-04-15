@@ -4,6 +4,7 @@ import json
 
 base_url = "https://reqres.in"
 
+
 def get_request(resource):
     response = requests.get(base_url + resource)
     return response
@@ -41,6 +42,8 @@ def delete_request(resource):
 
 
 
+# if you want to ignore the SSL certification error pass peramater as (verify = False)
+# If you want to add authentication to the input requests add parameter as (auth = ('user', 'pass'))
 
 
 
